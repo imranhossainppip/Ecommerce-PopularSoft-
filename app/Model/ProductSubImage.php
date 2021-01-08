@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Model;
+
+use Illuminate\Database\Eloquent\Model;
+
+class ProductSubImage extends Model
+{
+    public function subImage(){
+        return $this->belongsTo(ProductSubImage::class, 'product_id', 'id');
+    }
+}
